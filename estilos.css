@@ -1,0 +1,9 @@
+/* breakpoints 1024px/1023-768/767-320 */
+
+body {
+    background-color: aliceblue;
+}
+
+audio {
+    animation: backwards;
+}
