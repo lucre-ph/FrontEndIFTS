@@ -29,6 +29,7 @@ superposiciones.
 
 body {
     background-color: aliceblue;
+    margin: 5%;
     text-align: center;
 }
 
@@ -38,4 +39,5 @@ body {
 
 audio {
     animation: backwards;
+
 }
