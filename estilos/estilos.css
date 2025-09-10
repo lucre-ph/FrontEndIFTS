@@ -30,4 +30,12 @@ li {
     background-color: white;
     max-width: fit-content;
     margin: auto;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.card p {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
