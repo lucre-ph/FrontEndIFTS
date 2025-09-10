@@ -39,5 +39,9 @@ body {
 
 audio {
     animation: backwards;
-
 }
+
+ul {
+    list-style-type: none;
+}
+
