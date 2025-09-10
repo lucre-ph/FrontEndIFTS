@@ -5,6 +5,10 @@ cuidando la armonía visual y la legibilidad.
 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: aliceblue;
     margin: 5%;
