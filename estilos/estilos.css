@@ -33,6 +33,7 @@ li {
     margin: auto;
     overflow: hidden;
     padding: 1rem;
+    margin-bottom: 50px;
 }
 
 .returnLink {
