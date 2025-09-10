@@ -39,7 +39,7 @@ li {
     margin-bottom: 50px;
 }
 
-.returnLink {
+.returnLink button {
   padding: 10px 20px;
   background-color: #c17af8;
   color: white;
@@ -50,7 +50,7 @@ li {
   font-size: 16px;
 }
 
-.returnLink:hover {
+.returnLink:hover button:hover {
   background-color: #9812ff;
 }
 
