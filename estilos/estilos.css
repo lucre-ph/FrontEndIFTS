@@ -7,6 +7,7 @@ cuidando la armonía visual y la legibilidad.
 
 body {
     background-color: aliceblue;
+    display: inline-block;
     margin: 5%;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -32,6 +33,21 @@ li {
     margin: auto;
     overflow: hidden;
     padding: 1rem;
+}
+
+.returnLink {
+  padding: 10px 20px;
+  background-color: #c17af8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.returnLink:hover {
+  background-color: #9812ff;
 }
 
 .card p {
