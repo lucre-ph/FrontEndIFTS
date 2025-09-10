@@ -1,4 +1,31 @@
-/* breakpoints 1024px/1023-768/767-320 */
+/* breakpoints 1024px/1023-768/767-320 
+
+
+-Los estilos deben visualizarse correctamente en todas las páginas; no se deben dejar los estilos
+por defecto del navegador ni fuentes genéricas.
+-Se deben utilizar tipografías de Google Fonts para mejorar la estética y legibilidad del sitio.
+-Los estilos deben ser prolijos, legibles y consistentes, siguiendo buenas prácticas de escritura
+de CSS (nombres de clases claros, indentación correcta, comentarios cuando sea necesario).
+-El equipo puede decidir una estética general para todo el sitio o permitir que cada estudiante
+estile su sección individual a su gusto; ambas opciones son válidas siempre y cuando los estilos
+sean aplicados correctamente.
+-Se deben aplicar colores, márgenes, paddings y tamaños de fuente de manera consistente,
+cuidando la armonía visual y la legibilidad.
+
+>Requerimiento obligatorio: Diseño adaptable (Responsive Design)
+
+IMPORTANTE: Es obligatorio que el sitio web sea adaptable a diferentes tamaños de pantalla y
+que se implementen al menos los siguientes breakpoints en CSS:
+
+● 400px de ancho (para dispositivos móviles pequeños)
+● 900px de ancho (para tablets o pantallas medianas)
+● 1200px de ancho (para pantallas de escritorio grandes)
+
+El diseño debe ajustarse correctamente en cada uno de estos rangos, asegurando que los
+contenidos sean legibles y que la navegación funcione de manera óptima sin desbordes ni
+superposiciones.
+
+*/
 
 body {
     background-color: aliceblue;
