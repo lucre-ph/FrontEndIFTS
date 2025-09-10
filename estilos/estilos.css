@@ -55,3 +55,7 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.hidden {
+    display: none;
+}
