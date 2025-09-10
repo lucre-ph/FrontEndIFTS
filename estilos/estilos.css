@@ -32,15 +32,6 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.avatar {
-    max-height: 250px;
-}
-
-.card {
-    border-color: black;
-    border-radius: 3%;
-}
-
 audio {
     animation: backwards;
 }
@@ -49,3 +40,13 @@ ul {
     list-style-type: none;
 }
 
+.avatar {
+    max-height: 250px;
+}
+
+.card {
+    /*border-color: black;*/
+    border-radius: 3%;
+    /*border-style: solid;*/
+    border: 1px solid black;
+}
