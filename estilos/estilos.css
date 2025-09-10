@@ -37,6 +37,10 @@ body {
     max-height: 250px;
 }
 
+#card {
+    border-color: black;
+}
+
 audio {
     animation: backwards;
 }
