@@ -56,11 +56,11 @@ li {
   text-overflow: ellipsis;
 }
 
-.hidden {
+/*.hidden {
     display: none;
 }
 
-/*.showed {
+.showed {
     display: block
 }*/
 
