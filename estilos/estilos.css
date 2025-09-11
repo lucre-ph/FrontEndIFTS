@@ -1,16 +1,11 @@
-/* breakpoints 1200px ancho/900px ancho/400px ancho
-
--Se deben aplicar colores, márgenes, paddings y tamaños de fuente de manera consistente,
-cuidando la armonía visual y la legibilidad.
-
-*/
+/* breakpoints 1200px ancho/900px ancho/400px ancho*/
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: rgb(229, 198, 238);
     margin: 5%;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -68,23 +63,17 @@ li {
     display: block
 }*/
 
-/* .column {
-  float: left;
-  width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .column {
   flex: 1;
   text-align: center;
+}
+
+#cardTitleDiv {
+    border-bottom: 1px dashed;
 }
