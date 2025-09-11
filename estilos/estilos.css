@@ -51,7 +51,7 @@ li {
 
 .card table td {
   padding: 5px 10px;
-  border: 1px solid #e0e0e0; 
+  #border: 1px solid #e0e0e0;# 
 }
 
 .returnLink, button {
@@ -109,4 +109,5 @@ li {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #333;
+
 }
