@@ -22,7 +22,8 @@ li {
 
 .avatar {
     max-height: 15rem;
-    object-fit: contain;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .card {
@@ -34,16 +35,24 @@ li {
     overflow: hidden;
     padding: 1rem;
     margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+}
+
+.card p {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card table {
-  margin: auto;
+  margin-top: 1rem;
+  width: 100%;
   border-collapse: collapse;
 }
 
 .card table td {
   padding: 5px 10px;
-  border: 1px solid #ccc; 
+  border: 1px solid #e0e0e0; 
 }
 
 .returnLink, button {
@@ -61,12 +70,6 @@ li {
   background-color: #5633f3;
 }
 
-.card p {
-  max-height: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /*.hidden {
     display: none;
 }
@@ -78,8 +81,9 @@ li {
 .row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5%; 
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1.5rem 0; 
 }
 
 .column {
@@ -88,9 +92,17 @@ li {
 }
 
 .highlight {
-  font-weight: bold;  
+  font-weight: bold; 
+  background-color: #f5f5f5 
 }
 
 #cardTitleDiv {
-    border-bottom: 1px dashed;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 0.5rem;
+}
+
+#cardTitleDiv h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
