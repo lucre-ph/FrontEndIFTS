@@ -75,6 +75,10 @@ li {
   text-align: center;
 }
 
+.highlight {
+  font-weight: bold;  
+}
+
 #cardTitleDiv {
     border-bottom: 1px dashed;
 }
