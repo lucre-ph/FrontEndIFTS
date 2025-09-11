@@ -22,17 +22,28 @@ li {
 
 .avatar {
     max-height: 15rem;
+    object-fit: contain;
 }
 
 .card {
     border-radius: 15px 50px;
     border: 1px solid black;
     background-color: white;
-    max-width: 50%;
+    max-width: 75%;
     margin: auto;
     overflow: hidden;
     padding: 1rem;
     margin-bottom: 3rem;
+}
+
+.card table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.card table td {
+  padding: 5px 10px;
+  border: 1px solid #ccc; 
 }
 
 .returnLink, button {
@@ -68,6 +79,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5%; 
 }
 
 .column {
