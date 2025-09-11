@@ -36,7 +36,7 @@ li {
 
 .returnLink, button {
   padding: 10px 20px;
-  background-color: #c17af8;
+  background-color: #7e7af8;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -46,7 +46,7 @@ li {
 }
 
 .returnLink:hover, button:hover {
-  background-color: #9812ff;
+  background-color: #5633f3;
 }
 
 .card p {
