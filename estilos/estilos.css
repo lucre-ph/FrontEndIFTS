@@ -23,7 +23,6 @@ li {
 .avatar {
     max-height: 15rem;
     object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .card {
@@ -70,7 +69,7 @@ li {
   background-color: #5633f3;
 }
 
-/*.hidden {
+.hidden {
     display: none;
     max-height: 0;
     overflow: hidden;
@@ -78,10 +77,10 @@ li {
 }
 
 .showed {
-    display: block
+    display: block;
     max-height: 500px;
   transition: max-height 0.5s ease;
-}*/
+}
 
 .row {
   display: flex;
