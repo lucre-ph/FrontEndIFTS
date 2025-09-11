@@ -72,10 +72,15 @@ li {
 
 /*.hidden {
     display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .showed {
     display: block
+    max-height: 500px;
+  transition: max-height 0.5s ease;
 }*/
 
 .row {
