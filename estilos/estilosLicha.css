@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #e03f3f;
+    background: #ed1111;
     color: white;
     text-align: center;
     padding: 20px;
@@ -39,8 +39,8 @@ header h1 {
 }
 
 .content h2 {
-    margin-top: 20px;
-    color: #2e5d8c;
+    margin-top: 15px;
+    color: #c2d9ed;
 }
 
 .sidebar {
