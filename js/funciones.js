@@ -21,14 +21,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 600);
     });
 });
-🔹 CSS (agregar al final de tu estilosLicha.css)
-css
-Copiar código
-.avatar {
-    transition: opacity 0.6s ease;
-    cursor: pointer;
-}
-
-.fade {
-    opacity: 0;
-}
