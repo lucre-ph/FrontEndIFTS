@@ -22,4 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleBtn.textContent = "Información Personal"
     }
   })
+
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const avatar = document.querySelector(".avatar");
+    const aliasParrafo = document.querySelector(".tarjeta p strong"); 
+
+    let esBlanco = true;
+
+    avatar.addEventListener("click", () => {
+        avatar.classList.add("fade"); 
+
+        setTimeout(() => {
+            if (esBlanco) {
+                avatar.src = "./img/gandalf1.png"; 
+                aliasParrafo.textContent = "Alias: Lichalf el Gris";
+            } else {
+                avatar.src = "./img/gandalf2.png"; 
+                aliasParrafo.textContent = "Alias: Lichalf el Blanco";
+            }
+            esBlanco = !esBlanco;
+
+            avatar.classList.remove("fade"); 
+        }, 600);
+    });
 });
