@@ -1,33 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tincho</title>
+    <meta
+      name="description"
+      content="Perfil personal de Tincho con información sobre ubicación, edad, películas favoritas, habilidades y discos preferidos"
+    />
+    <link rel="stylesheet" href="./estilos/estilosTincho.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-</head>
+  <body>
+    <main>
+      <article class="card">
+        <header>
+          <h1>Tincho</h1>
+          <img
+            class="avatar"
+            src="./img/cowboy.png"
+            alt="Una representación de Tincho como cowboy"
+          />
+        </header>
 
-<body>
-    <div>
-        <h1>Tincho</h1>
-        <img class="avatar" src="./img/cowboy.png" alt="">
-        <p>Informacion Personal</p>
-        <!-- Boton para desplegar info -->
-        <p>Ubicacion actual</p>
-        <p>Edad</p>
-        <p>Peliculas Favoritas</p>
-        <!-- 3 en ul -->
-        <p>Habilidades</p>
-        <!-- 4 en ul -->
-        <p>Musica Favorita</p>
-        <!-- 3 en ul -->
-    </div>
-    <button><a href="./index.html">Volver al Inicio</a></button>
-</body>
+        <section class="seccion-colapsable">
+          <h2 class="encabezado-colapsable">Ubicación actual</h2>
+          <div class="contenido-colapsable">
+            <address>La Plata, Buenos Aires, Argentina</address>
+          </div>
+        </section>
 
+        <section class="seccion-colapsable">
+          <h2 class="encabezado-colapsable">Edad</h2>
+          <div class="contenido-colapsable">
+            <p>36 años</p>
+          </div>
+        </section>
+
+        <section class="seccion-colapsable">
+          <h2 class="encabezado-colapsable">Películas Favoritas</h2>
+          <div class="contenido-colapsable">
+            <ul>
+              <li>El Jockey</li>
+              <li>Fantastic Planet</li>
+              <li>Mulholland Drive</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="seccion-colapsable">
+          <h2 class="encabezado-colapsable">Habilidades</h2>
+          <div class="contenido-colapsable">
+            <ul>
+              <li>Programación</li>
+              <li>Hacer malabares con tres pelotas</li>
+              <li>Tocar instrumentos</li>
+              <li>
+                Saltar de aviones sin paracaídas (demostrable una sola vez)
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="seccion-colapsable">
+          <h2 class="encabezado-colapsable">Discos favoritos</h2>
+          <div class="contenido-colapsable">
+            <ul>
+              <li>Random Access Memories - Daft Punk</li>
+              <li>Por cesárea - Dillom</li>
+              <li>Currents - Tame Impala</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <nav>
+      <a href="./index.html" class="boton-volver">← Volver al Inicio</a>
+    </nav>
+
+    <script src="./js/martinScript.js"></script>
+  </body>
 </html>

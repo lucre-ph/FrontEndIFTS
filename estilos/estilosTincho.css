@@ -1,0 +1,248 @@
+/* Defino las variables de color para mi sección */
+:root {
+  --azul-muy-oscuro: #0a1128ff;
+  --azul-oscuro: #001f54ff;
+  --azul-medio: #034078ff;
+  --azul-claro: #1282a2ff;
+  --blanco-hueso: #fefcfbff;
+  --negro: #02040fff;
+  --sombra: 0 2px 4px rgba(2, 4, 15, 0.1);
+}
+
+body {
+  background-color: var(--azul-muy-oscuro);
+  font-family: "Google Sans Code", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.avatar {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: auto;
+  margin: 1.5rem;
+  background-color: var(--blanco-hueso);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* Media Queries para diseño responsive */
+
+/* Pantallas desde 0px hasta 400px */
+@media (max-width: 400px) {
+  article.card {
+    width: 90%;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 10rem;
+  }
+
+  nav {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .boton-volver {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+}
+
+/* Pantallas desde 401px hasta 900px */
+@media (min-width: 401px) and (max-width: 900px) {
+  article.card {
+    width: 80%;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 12rem;
+  }
+
+  .boton-volver {
+    opacity: 0.7;
+  }
+}
+
+/* Pantallas desde 901px hasta 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+  article.card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: 55%;
+  }
+
+  .avatar {
+    max-height: 15rem;
+  }
+}
+
+/* Pantallas desde 1201px en adelante */
+@media (min-width: 1201px) {
+  article.card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: 35%;
+  }
+
+  .avatar {
+    max-height: 18rem;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+article.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: auto;
+  margin: 1.5rem;
+  background-color: var(--blanco-hueso);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.boton-volver {
+  background-color: var(--azul-medio);
+  color: var(--blanco-hueso);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease, opacity 0.3s ease;
+  margin-bottom: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.boton-volver:hover {
+  background-color: var(--azul-claro);
+  transform: translateY(-2px);
+  color: var(--blanco-hueso);
+  opacity: 1;
+}
+
+.boton-volver:active {
+  transform: translateY(0);
+}
+
+address {
+  font-style: normal;
+  color: var(--negro);
+}
+
+/* Estilos de secciones colapsables */
+.seccion-colapsable {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.encabezado-colapsable {
+  background-color: var(--azul-medio);
+  color: var(--blanco-hueso);
+  padding: 1rem;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.encabezado-colapsable:hover {
+  background-color: var(--azul-claro);
+}
+
+.encabezado-colapsable::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.encabezado-colapsable.activo::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.contenido-colapsable {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--blanco-hueso);
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  padding: 0 1rem;
+}
+
+.contenido-colapsable.activo {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.contenido-colapsable p,
+.contenido-colapsable ul {
+  margin: 0;
+  color: var(--negro);
+}
+
+.contenido-colapsable ul {
+  padding-left: 1.5rem;
+}
+
+.contenido-colapsable li {
+  margin-bottom: 0.5rem;
+  color: var(--azul-oscuro);
+}
