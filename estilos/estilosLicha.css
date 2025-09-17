@@ -81,3 +81,12 @@ button a {
     color: white;
     font-weight: bold;
 }
+
+.avatar {
+    transition: opacity 0.6s ease;
+    cursor: pointer;
+}
+
+.fade {
+    opacity: 0;
+}
