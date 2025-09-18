@@ -1,0 +1,222 @@
+/*
+    Nota: se utilizan variables CSS (:root) para gestionar el sistema de theming (claro/oscuro)
+*/
+
+/* --- VARIABLES Y ESTILOS GLOBALES --- */
+:root {
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+    --color-primario: #007BFF;
+    --color-header-footer: #2c3e50;
+    --color-texto-header: #ffffff;
+    --color-hover-amarillo: #FFD700;
+}
+
+body.dark-mode {
+    --color-fondo: #121212;
+    --color-texto: #e0e0e0;
+    --color-primario: #1e90ff;
+    --color-header-footer: #1f1f1f;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { height: 100%; }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- LAYOUT GENERAL (HEADER, FOOTER, MAIN) --- */
+.header-principal, .footer-principal {
+    background-color: var(--color-header-footer);
+    color: var(--color-texto-header);
+    padding: 1rem;
+    text-align: center;
+}
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-link {
+    color: var(--color-texto-header);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.nav-link:hover {
+    color: var(--color-hover-amarillo);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+.theme-button {
+    background: none; border: none; cursor: pointer;
+}
+.theme-button img {
+    width: 150px;
+    transition: filter 0.3s, transform 0.3s;
+}
+.theme-button:hover img {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+    transform: scale(1.05);
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA pablo.html --- */
+.pablo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-grow: 1;
+}
+.card-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* --- CONTROLES DE TAMAÑO DE TARJETA --- */
+.image-flipper {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    width: 280px;
+    height: 392px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+/* Columna Izquierda: Imagen con efecto 3D */
+.flipper-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    border-radius: 20px;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform-origin: center center;
+}
+
+/*
+    Se ha implementado una estrategia de "mejora progresiva":
+    El efecto :hover solo se aplica a dispositivos con capacidad de "puntero preciso" (ratón/mouse)
+    Esto se logra con la @media query '(hover: hover)'
+*/
+@media (hover: hover) {
+    .image-flipper:hover .flipper-content {
+        transform: rotateY(180deg) translateZ(0);
+        -webkit-transform: rotateY(180deg) translateZ(0);
+    }
+}
+
+/*
+    Para dispositivos "táctiles", se crea una clase '.is-flipped'
+    que será gestionada por JavaScript
+    Esto permite controlar el giro de la tarjeta mediante eventos de toque (tap)
+*/
+.is-flipped .flipper-content {
+    transform: rotateY(180deg) translateZ(0);
+    -webkit-transform: rotateY(180deg) translateZ(0);
+}
+
+.flipper-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    will-change: transform;
+}
+.flipper-face--back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.flipper-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    max-width: none;
+    image-rendering: auto;
+}
+
+#github-link {
+    pointer-events: none;
+}
+.image-flipper:hover #github-link,
+.is-flipped #github-link { /* El enlace también se activa con la clase JS */
+    pointer-events: auto;
+}
+.image-flipper:hover .flipper-face,
+.is-flipped .flipper-face { /* La sombra también se activa con la clase JS */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Columna Derecha: "acordeón" de texto CSS */
+.info-accordion {
+    width: 50%;
+    max-width: 500px;
+}
+.info-item-static h1 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin: 0;
+    padding: 0.5rem 0;
+    line-height: 1.2;
+}
+
+.info-item h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding-left: 1rem;
+}
+.info-item:hover .details {
+    max-height: 200px;
+}
+.details ul { list-style-type: '● '; padding-left: 1.5rem; }
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--color-primario);
+    margin: 1rem 0;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 900px) {
+    .card-container { flex-direction: column; text-align: center; gap: 2rem; }
+    .info-accordion { width: 100%; max-width: 400px; }
+    .image-flipper { width: 260px; height: 364px; }
+}
+
+@media (max-width: 400px) {
+    .pablo-container { padding: 1rem; }
+    .theme-button img { width: 120px; }
+    .nav-link { font-size: 1rem; }
+    .image-flipper { width: 220px; height: 308px; }
+}
