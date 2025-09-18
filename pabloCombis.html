@@ -1,52 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
+    <!-- 
+        Se importa la fuente personalizada 'Pixelify Sans' desde Google Fonts para la estética general del sitio
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Pablo</title>
+    <link rel="stylesheet" href="estilos/estilosPablo.css">
 </head>
-
 <body>
-    <div>
-        <h1>Pablo</h1>
-        <img class="avatar" src="./img/hero.png" alt="Avatar de Pablo">
-        
-        <p><strong>Información Personal</strong></p>
-        
-        <p><strong>Ubicación actual</strong></p>
-        <p>CABA</p>
-        
-        <p><strong>Edad</strong></p>
-        <p>+40</p>
-        
-        <p><strong>Películas Favoritas</strong></p>
-        <ul>
-            <li>Blade Runner (1982)</li>
-            <li>Pulp Fiction (1995)</li>
-        </ul>
-        
-        <p><strong>Habilidades</strong></p>
-        <ul>
-            <li>Programación</li>
-            <li>Diseño</li>
-            <li>Cocina</li>
-            <li>Running</li>
-        </ul>
-        
-        <p><strong>Música Favorita</strong></p>
-        <ul>
-            <li>Master of Puppets - Metallica (1986)</li>
-            <li>Use Your Illusion - Guns N' Roses (1991)</li>
-            <li>Night Visions - Imagine Dragons (2012)</li>
-        </ul>
-    </div>
-    <button><a href="./index.html">Volver al Inicio</a></button>
-</body>
 
+    <!-- 
+        Enlace para regresar a la "Portada" y botón para cambio de tema/modo ("claro/oscuro")
+        cumpliendo con el requisito de interactividad JS
+    -->
+    <header class="header-principal">
+        <nav class="navegacion">
+            <a href="https://lucre-ph.github.io/FrontEndIFTS/index.html" class="nav-link">Regresar a la Portada</a>
+            <button id="theme-toggle" class="theme-button">
+                <img id="theme-toggle-icon" src="img/pablo/modo-oscuro.png" alt="Cambiar tema">
+            </button>
+        </nav>
+    </header>
+
+    <!-- 
+        Se utiliza Flexbox para centrar vertical y horizontalmente
+        el contenido principal, garantizando una correcta visualización
+        en los diferentes tamaños de pantalla
+    -->
+    <main class="pablo-container">
+        
+        <div class="card-container">
+
+            <!-- 
+                La imagen se encuentra dentro de un contenedor 'flipper' que permite
+                una rotación 3D sobre el eje Y al hacer :hover (CSS)
+                El enlace a GitHub envuelve la estructura para ser funcional únicamente
+                en la cara trasera de la tarjeta, evitando clics "accidentales"
+            -->
+            <div class="image-flipper">
+                <a id="github-link" href="https://github.com/Pablo-Damian" target="_blank" rel="noopener noreferrer">
+                    <div class="flipper-content">
+                        <div class="flipper-face flipper-face--front">
+                            <img src="img/pablo/pablo_avatar.png" alt="Avatar de Pablo">
+                        </div>
+                        <div class="flipper-face flipper-face--back">
+                            <img src="img/pablo/pablo_GitHub.png" alt="Logo de GitHub">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 
+                La información personal se estructura como un "acordeón" implementado puramente en CSS
+                Al hacer :hover sobre cada ítem, se anima la propiedad 'max-height' del contenedor
+                para crear un efecto de despliegue fluido sin utilizar JavaScript
+            -->
+            <div class="info-accordion">
+                <!-- INICIO DE LA MODIFICACIÓN: Se agrega el nombre como primer elemento de la tarjeta -->
+                <div class="info-item-static">
+                    <h1>Pablo</h1>
+                </div>
+                <hr>
+                <!-- FIN DE LA MODIFICACIÓN -->
+
+                <div class="info-item">
+                    <h2>Ubicación actual</h2>
+                    <div class="details"><p>CABA</p></div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <h2>Edad</h2>
+                    <div class="details"><p>+40</p></div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <h2>Películas favoritas</h2>
+                    <div class="details"><ul><li>Blade Runner (1982)</li><li>Pulp Fiction (1995)</li><li>Nueve reinas (2000)</li></ul></div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <h2>Habilidades</h2>
+                    <div class="details"><ul><li>Programación (lenguajes varios)</li><li>Desarrollo de VideoJuegos</li><li>Cocina</li><li>Running</li></ul></div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <h2>Discos/Música favorita</h2>
+                    <div class="details"><ul><li>Master of Puppets - Metallica (1986)</li><li>Use Your Illusion - Guns N' Roses (1991)</li><li>Night Visions - Imagine Dragons (2012)</li></ul></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-principal">
+        <p>Grupo 10 - 2025 2C DSW (Front End) - 2° A - IFTS N.º29</p>
+    </footer>
+
+    <!-- 
+        Este script js gestiona la funcionalidad del modo "claro/oscuro"
+    -->
+    <script src="js/scriptPablo.js"></script>
+</body>
 </html>
