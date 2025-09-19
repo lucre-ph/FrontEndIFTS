@@ -58,7 +58,7 @@ header h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin-bottom: 15px;
     object-fit: cover;
-    height: 400px;  
+    max-height: 400px;  
 }
 
 .tarjeta {
@@ -95,4 +95,56 @@ button a {
 
 .fade {
     opacity: 0;
+}
+
+@media (max-width: 400px) {
+  .tarjeta {
+    width: 90%;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 10rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+  .tarjeta {
+    width: 80%;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 12rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .tarjeta {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: 55%;
+  }
+
+  .avatar {
+    max-height: 15rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: 35%;
+  }
+
+  .avatar {
+    max-height: 18rem;
+  }
 }
