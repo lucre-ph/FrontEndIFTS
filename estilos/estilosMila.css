@@ -26,7 +26,7 @@ li {
 .flechas {
   margin-top: 30px;
   font-size: 24px;
-  transition: opacity 0.3s; /* suaviza el parpadeo */
+  transition: opacity 0.3s; 
 }
 
 .carrusel{
@@ -62,14 +62,14 @@ li {
   width: 500px;
   height: 250px;
   position: relative;
-  background-image: url("touch1.png");
-  background-size: cover;      /* hace que la imagen llene todo el div */
-  background-position: center; /* centra la imagen */
+  background-image: url("img/touch1.png");
+  background-size: cover;      
+  background-position: center; 
   border-radius: 8px;
-  color: white;                /* texto blanco para que contraste */
+  color: white;                
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;   /* baja el texto hacia abajo */
+  justify-content: flex-end;   
   padding: 20px;
 }
   
@@ -149,12 +149,13 @@ li {
 
 footer {
   background-color: transparent;
-  color: #000;                 /* color del texto */
-  text-align: center;           /* centrar texto */
-  padding: 20px;                /* espacio interno */
-  position: relative;           /* para posicionamiento opcional */
-  bottom: 0;                    /* si usás fixed */
+  color: #000;                 
+  text-align: center;           
+  padding: 20px;                
+  position: relative;           
+  bottom: 0;                    
   width: 100%;                  /* ocupa todo el ancho */
   margin-top: 50px;
 }
+
 
