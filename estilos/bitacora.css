@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(white, grey);
+  padding: 0 ;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    width: 100%;
+}
+
+h1{
+    color: white;
+}
+
+#grupazo{
+    font-size: x-large;
+}
+
+
+summary {
+  cursor: pointer;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 15px;
+  color: white;
+}
+
+details[open] summary {
+  background-color: black;
+}
+
+p{
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
