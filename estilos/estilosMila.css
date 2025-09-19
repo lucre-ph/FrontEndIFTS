@@ -5,88 +5,68 @@
 }
 
 body {
-    background: linear-gradient(to top, #f7af50, #ffffff);
-    margin: 5%;
-    padding: 0 15%;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-  }
-
-
+  background: linear-gradient(to top, #f7af50, #ffffff);
+  margin: 5%;
+  padding: 0 15%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .avatar {
-    max-height: 15rem;
-    object-fit: cover;
-  }
+  max-height: 15rem;
+  object-fit: cover;
+}
 
 .flechas {
   margin-top: 30px;
   font-size: 24px;
-  transition: opacity 0.3s; 
+  transition: opacity 0.3s;
 }
 
-.carrusel{
-  display: flex ;
-  flex-wrap:nowrap;
-  overflow: scroll;
-  scroll-behavior: smooth;
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap; /* siempre horizontal */
+  overflow-x: auto;  /* scroll horizontal */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   margin-top: 30px;
-  }
+}
 
 .carrusel::-webkit-scrollbar {
-  display: none; 
-  }
+  display: none; /* oculta la barra */
+}
 
-.carrusel .item {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 150px;
-  background: #ffefef;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  scroll-snap-align: start;
-  }
-
-
-
-.dato{
-  flex: 1 0 auto;
-  margin: 0 50px;
-  width: 500px;
-  height: 250px;
+.dato {
+  flex: 0 0 auto; /* no se achican */
+  width: 280px;
+  height: 180px;
+  margin: 0 10px;
   position: relative;
   background-image: url("img/touch1.png");
-  background-size: cover;      
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   border-radius: 8px;
-  color: white;                
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;   
-  padding: 20px;
+  justify-content: flex-end;
+  padding: 15px;
+  scroll-snap-align: start;
 }
-  
 
 .dato p {
-
   bottom: 30px;
-  color: #FFFF;
-  font-size: 20px;
+  color: #fff;
+  font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border-radius: 5px;
-  }
-
-
-
+}
 
 .returnLink, button {
   padding: 10px 20px;
@@ -105,15 +85,15 @@ li {
 }
 
 .hidden {
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
 }
 
 .showed {
-    display: block;
-    max-height: 500px;
+  display: block;
+  max-height: 500px;
   transition: max-height 0.5s ease;
 }
 
@@ -122,7 +102,7 @@ li {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin: 1.5rem 0; 
+  margin: 1.5rem 0;
 }
 
 .column {
@@ -131,31 +111,85 @@ li {
 }
 
 .highlight {
-  font-weight: bold; 
-  background-color: #f5f5f5 
+  font-weight: bold;
+  background-color: #f5f5f5;
 }
 
 #cardTitleDiv {
-    border-bottom: 1px dashed #ccc;
-    padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.5rem;
 }
 
 #cardTitleDiv h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #333;
-
 }
 
 footer {
   background-color: transparent;
-  color: #000;                 
-  text-align: center;           
-  padding: 20px;                
-  position: relative;           
-  bottom: 0;                    
-  width: 100%;                  /* ocupa todo el ancho */
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   margin-top: 50px;
 }
+
+/* --- Media queries para responsive --- */
+
+/* Tablet (>=400px y <900px) */
+@media (min-width: 400px) and (max-width: 899px) {
+  body {
+    padding: 0 8%;
+  }
+
+  .dato {
+    width: 350px;
+    height: 200px;
+    margin: 0 15px;
+  }
+
+  .dato p {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas medianas (>=900px y <1200px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  body {
+    padding: 0 12%;
+  }
+
+  .dato {
+    width: 420px;
+    height: 230px;
+    margin: 0 20px;
+  }
+
+  .dato p {
+    font-size: 19px;
+  }
+}
+
+/* Escritorio grande (>=1200px) */
+@media (min-width: 1200px) {
+  body {
+    padding: 0 15%;
+  }
+
+  .dato {
+    width: 500px;
+    height: 250px;
+    margin: 0 25px;
+  }
+
+  .dato p {
+    font-size: 20px;
+  }
+}
+
+
 
 
