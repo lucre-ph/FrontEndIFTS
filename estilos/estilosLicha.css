@@ -53,12 +53,14 @@ header h1 {
 }
 
 .avatar {
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin-bottom: 15px;
     object-fit: cover;
-    max-height: 400px;  
+    height: auto;  
+    max-height: none;
 }
 
 .tarjeta {
@@ -98,53 +100,153 @@ button a {
 }
 
 @media (max-width: 400px) {
+  body{
+    font-size: 13px;
+  }
+
+   header{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    order: -1;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content{
+    width: 100%;
+    max-width: 200px;   
+    margin: 0 auto;   
+  }
+
   .tarjeta {
     width: 90%;
     margin: 0.5rem;
     padding: 1.5rem;
     gap: 1rem;
+    max-width: 800px;   
+    margin: 0 auto; 
   }
 
   .avatar {
-    max-height: 10rem;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: auto;  
+    max-height: none;
   }
 }
 
 @media (min-width: 401px) and (max-width: 900px) {
+   body{
+    font-size: 15px;
+  }
+
+  header{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    order: -1;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 800px;   
+    margin: 0 auto; 
+  }
+
+  .content{
+    width: 100%;
+    max-width: 300px;   
+    margin: 0 auto;   
+  }
+
   .tarjeta {
     width: 80%;
     margin: 0.5rem;
     padding: 2.5rem;
     gap: 1rem;
+    max-width: 800px;   
+    margin: 0 auto; 
   }
 
   .avatar {
-    max-height: 12rem;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: auto;  
+    max-height: none;
   }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
+   body{
+    font-size: 17px;
+  }
+
+   header{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    order: -1;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 800px;   
+    margin: 0 auto; 
+  }
+
+  .content{
+    width: 100%;
+    max-width: 600px;   
+    margin: 0 auto;     
+    
+  }
+
   .tarjeta {
     margin: 0.5rem;
     padding: 1.5rem;
     gap: 1rem;
     width: 55%;
+    max-width: 800px;   
+    margin: 0 auto; 
   }
 
   .avatar {
-    max-height: 15rem;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: auto;  
+    max-height: none;
   }
 }
 
-@media (min-width: 1201px) {
-  .card {
-    margin: 0.5rem;
-    padding: 1.5rem;
-    gap: 1rem;
-    width: 35%;
-  }
 
-  .avatar {
-    max-height: 18rem;
-  }
-}
