@@ -2,7 +2,7 @@
 
 **Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro
 
-#DESCRIPCIÓN DEL PROYECTO:
+## DESCRIPCIÓN DEL PROYECTO:
 
 Este trabajo práctico consiste en el desarrollo de un sitio web grupal con una página principal simple, desde la cual se accede a las páginas individuales de cada integrante del equipo.  
 El objetivo del proyecto es practicar el uso de HTML, CSS y JavaScript para construir un sitio web navegable, con diseño atractivo y adaptable a distintos dispositivos.  
