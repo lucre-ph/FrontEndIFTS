@@ -29,24 +29,24 @@ li {
 
 .carrusel {
   display: flex;
-  flex-wrap: nowrap; /* siempre horizontal */
-  overflow-x: auto;  /* scroll horizontal */
+  flex-wrap: nowrap; 
+  overflow-x: auto;  
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   margin-top: 30px;
 }
 
 .carrusel::-webkit-scrollbar {
-  display: none; /* oculta la barra */
+  display: none; 
 }
 
 .dato {
-  flex: 0 0 auto; /* no se achican */
+  flex: 0 0 auto; 
   width: 280px;
   height: 180px;
   margin: 0 10px;
   position: relative;
-  background-image: url("img/touch1.png");
+  background-image: url("./img/touch1.png");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -189,6 +189,7 @@ footer {
     font-size: 20px;
   }
 }
+
 
 
 
