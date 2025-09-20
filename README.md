@@ -2,6 +2,8 @@
 
 **Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro
 
+**Link a GitHub Pages:** <a href="https://lucre-ph.github.io/FrontEndIFTS/" target="_blank">https://lucre-ph.github.io/FrontEndIFTS/</a>
+
 ## DESCRIPCIÓN DEL PROYECTO:
 
 Este trabajo práctico consiste en el desarrollo de un sitio web grupal con una página principal simple, desde la cual se accede a las páginas individuales de cada integrante del equipo.  
