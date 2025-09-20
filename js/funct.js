@@ -1,12 +1,17 @@
 //INTERACTIVIDAD: CREAR BOTON EN INDEX
+function cambiarFondo() {
+  const colores = ["#f4a261", "#2a9d8f", "#e9c46a", "#264653", "#e76f51"];
+  const randomColor = colores[Math.floor(Math.random() * colores.length)];
+  document.body.style.background = randomColor;
+  document.body.style.backgroundAttachment = "initial";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("botonIndex");
-  const colores = ["#f4a261", "#2a9d8f", "#e9c46a", "#264653", "#e76f51"];
 
   if (!btn) return;
   btn.addEventListener("click", () => {
-    const randomColor = colores[Math.floor(Math.random() * colores.length)];
-    document.body.style.backgroundColor = randomColor;
+    cambiarFondo();
   });
 });
 
