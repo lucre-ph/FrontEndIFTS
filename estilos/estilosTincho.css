@@ -19,97 +19,6 @@ body {
   margin: 0;
 }
 
-.avatar {
-  max-width: 100%;
-  max-height: 15rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  width: auto;
-  margin: 1.5rem;
-  background-color: var(--blanco-hueso);
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-}
-
-/* Media Queries para diseño responsive */
-
-/* Pantallas desde 0px hasta 400px */
-@media (max-width: 400px) {
-  article.card {
-    width: 90%;
-    margin: 0.5rem;
-    padding: 1.5rem;
-    gap: 1rem;
-  }
-
-  .avatar {
-    max-height: 10rem;
-  }
-
-  nav {
-    bottom: 0.5rem;
-    right: 0.5rem;
-  }
-
-  .boton-volver {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    opacity: 0.7;
-  }
-}
-
-/* Pantallas desde 401px hasta 900px */
-@media (min-width: 401px) and (max-width: 900px) {
-  article.card {
-    width: 80%;
-    margin: 0.5rem;
-    padding: 2.5rem;
-    gap: 1rem;
-  }
-
-  .avatar {
-    max-height: 12rem;
-  }
-
-  .boton-volver {
-    opacity: 0.7;
-  }
-}
-
-/* Pantallas desde 901px hasta 1200px */
-@media (min-width: 901px) and (max-width: 1200px) {
-  article.card {
-    margin: 0.5rem;
-    padding: 1.5rem;
-    gap: 1rem;
-    width: 55%;
-  }
-
-  .avatar {
-    max-height: 15rem;
-  }
-}
-
-/* Pantallas desde 1201px en adelante */
-@media (min-width: 1201px) {
-  article.card {
-    margin: 0.5rem;
-    padding: 1.5rem;
-    gap: 1rem;
-    width: 35%;
-  }
-
-  .avatar {
-    max-height: 18rem;
-  }
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -138,16 +47,21 @@ header {
   gap: 1.5rem;
 }
 
-nav {
-  margin-top: 1rem;
+/* Footer */
+footer {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* background-color: var(--azul-medio); */
+  padding: 15px;
+  color: white;
   z-index: 1000;
 }
 
-.boton-volver {
-  background-color: var(--azul-medio);
+footer .boton-volver {
+  background-color: var(--azul-claro);
   color: var(--blanco-hueso);
   border: none;
   padding: 0.75rem 1.5rem;
@@ -162,14 +76,14 @@ nav {
   display: inline-block;
 }
 
-.boton-volver:hover {
-  background-color: var(--azul-claro);
+footer .boton-volver:hover {
+  background-color: var(--azul-oscuro);
   transform: translateY(-2px);
   color: var(--blanco-hueso);
   opacity: 1;
 }
 
-.boton-volver:active {
+footer .boton-volver:active {
   transform: translateY(0);
 }
 
@@ -245,4 +159,90 @@ address {
 .contenido-colapsable li {
   margin-bottom: 0.5rem;
   color: var(--azul-oscuro);
+}
+
+.avatar {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+/* Media Queries para diseño responsive */
+
+/* Pantallas desde 0px hasta 400px */
+@media (max-width: 400px) {
+  article.card {
+    max-width: 450px;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 10rem;
+  }
+
+  nav {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .boton-volver {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+}
+
+/* Pantallas desde 401px hasta 900px */
+@media (min-width: 401px) and (max-width: 900px) {
+  article.card {
+    max-width: 600px;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    max-height: 12rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .boton-volver {
+    opacity: 0.7;
+  }
+}
+
+/* Pantallas desde 901px hasta 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+  article.card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    max-width: 700px;
+  }
+
+  .avatar {
+    max-height: 15rem;
+  }
+}
+
+/* Pantallas desde 1201px en adelante */
+@media (min-width: 1201px) {
+  article.card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    max-width: 800px;
+  }
+
+  .avatar {
+    max-height: 18rem;
+  }
 }
