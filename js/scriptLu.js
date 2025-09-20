@@ -15,4 +15,5 @@ imagen.addEventListener("click", () => {
 // Mostrar y ocultar menu desplegable del navegador
 btnMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
+
 });
