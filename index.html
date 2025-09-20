@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Web Grupo10</title>
+    <title>Página Web Grupo 10</title>
     <link rel="stylesheet" href="./estilos/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,51 +15,75 @@
   </head>
 
   <body>
+    <!-- Header -->
+    <header>
+      <h1 id="grupazo">¡Hola, mundo! Somos el Grupazo 💪</h1>
+    </header>
+
+    <!-- Contenido principal -->
     <main>
-      <div>
-        <h1>¡Hola, mundo!</h1>
+      <section>
         <p>
           Esta es la web del grupo 10, alias "Grupazo". Nos conocimos todos desde
           los comienzos de la tecnicatura, y desde entonces formamos un equipo
           inseparable. Creemos que el trabajo en equipo es la clave para lograr
           llevar adelante un proyecto copado, y trabajamos entre todos para generar
-          siempre entregas superadoras.
+          siempre entregas superadoras. <br />
+          <em>(Dice Mila: también nos copiamos... no en esta materia, obvio
+          ...no lean eso...)</em>
         </p>
-      </div>
-  
-      <div>
+      </section>
+
+      <!-- Links del grupo -->
+      <nav>
         <ul>
           <li><a href="./pabloCombis.html">Pablo</a></li>
           <li><a href="./martinComito.html">Tincho</a></li>
           <li><a href="./camilaCuns.html">Mila</a></li>
           <li><a href="./lu.html">Lucritilla</a></li>
           <li><a href="./leandroSeoane.html">Licha</a></li>
-          <li><a href="./bitacoraFinal.html">Bitácora</a></li>
         </ul>
-      </div>
-      
-      <img src="https://characterai.io/i/400/static/avatars/uploaded/2023/5/27/n-hmIrcfhMM5dZwIa4PmBwuXA412-OpV8o7KYEHLgeQ.webp?webp=true&anim=0" alt="shrek"/>
-  
-      <br/>
+      </nav>
 
-      <div>
+      <!-- Imagen -->
+      <figure>
+        <img
+          src="https://characterai.io/i/400/static/avatars/uploaded/2023/5/27/n-hmIrcfhMM5dZwIa4PmBwuXA412-OpV8o7KYEHLgeQ.webp?webp=true&anim=0"
+          alt="shrek"
+          width="300"
+        />
+      </figure>
+
+      <!-- Audio -->
+      <section>
         <audio controls>
-          <source src="./music/Smash Mouth - All Star (Audio).mp3" type="audio/mpeg/">
-          <source src="./music/I'm A Believer (From Shrek Motion Picture Soundtrack).mp3" type="audio/mpeg/">
+          <source
+            src="./music/Smash Mouth - All Star (Audio).mp3"
+            type="audio/mpeg"
+          />
+          <source
+            src="./music/I'm A Believer (From Shrek Motion Picture Soundtrack).mp3"
+            type="audio/mpeg"
+          />
+          Tu navegador no soporta audio en HTML5.
         </audio>
+      </section>
+
+      <!-- Botón bitácora -->
+      <div>
+        <a href="./bitacoraFinal.html" class="btn-bitacora">Ir a la Bitácora</a>
       </div>
-      
-    <div>
-      <a href="./bitacoraFinal.html">BITACORA</a>
-    </div>
     </main>
 
-  <button id="botonIndex">Cambiar fondo</button>
-    
+    <button id="botonIndex">Cambiar fondo</button>
+
+
+    <!-- Footer -->
     <footer>
       <p>© 2025 Grupo 10 - Todos los derechos reservados</p>
     </footer>
-    
+
     <script src="./js/funct.js"></script>
   </body>
 </html>
+
