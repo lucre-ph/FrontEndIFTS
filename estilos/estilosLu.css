@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  background: url('./pokemonLogo.png') no-repeat center fixed;
+  background-size: contain;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  overflow: hidden;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+  background-image: url('./squirtle.png');
+}
+
+#pokedex {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  background-color: #ffdd1e; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.menuHamburguesa {
+  display: none;
+  background: transparent;
+  border-width: 0;
+}
+
+ul {
+   list-style: none;
+}
+
+.linksNavegacion {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.linksNavegacion > li {
+  position: relative; /* Para posicionar el submenú*/
+
+}
+
+.linksNavegacion li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+  padding: 1rem 2rem;
+}
+
+.linksNavegacion li a:hover {
+  color: #d03737; 
+  font-weight: bold;
+}
+
+
+/* ----- Estilos para el submenú ----- */
+.linksNavegacion li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.linksNavegacion li:hover > ul {
+  display: block;
+  background-color: #ffdd1e;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  border-radius: 6px;
+}
+
+
+/* ----- BREAKPOINTS Y RESPONSIVENESS ----- */
+@media (max-width: 400px) {
+
+  .menuHamburguesa {
+      display: block;
+  }
+
+  #menu > img {
+      width: 30px;
+      height: 30px;
+      background-color: #ffdd1e;
+  }
+
+  nav {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+  }
+
+  .logo {
+      flex: 1;
+      max-width: 40px;
+      max-height: 40px;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+
+  .linksNavegacion {
+      display: none;
+      flex-direction: column;
+      position: absolute; 
+      top: 60px;        
+      right: 1rem;      
+      width: auto;     
+      background-color: #ffdd1e;
+  }
+
+  .linksNavegacion li {
+      margin: 0;
+      text-align: center;
+      display: block;
+  }
+
+  .linksNavegacion li a {
+      padding: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.3);
+  }
+
+  /* Submenú dentro de mobile */
+  .linksNavegacion li ul {
+      position: static;
+      background: #f7cf0d;
+  }
+
+  .linksNavegacion li:hover > ul {
+      display: block;
+  }
+
+  /* Clase para mostrar menú cuando se activa */
+  .linksNavegacion.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdd1e;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    border-radius: 6px;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 800px) {
+  nav {
+      padding: 0.5rem 2rem;
+  }
+
+  .linksNavegacion {
+      display: flex;
+      gap: 1.5rem;
+  }
+
+  .menuHamburguesa {
+      display: none;
+  }
+}  
