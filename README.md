@@ -17,7 +17,7 @@ PÁGINA DE MILA:
 #TECNOLOGÍAS UTILIZADAS:
 - HTML5: estructura de la página.  
 - CSS3: estilos, diseño responsive con media queries y degradados de fondo.  
-- avaScript: efectos dinámicos (parpadeo, PROMPT).  
+- JavaScript: efectos dinámicos (parpadeo, PROMPT).  
 - Google Fonts: tipografía Roboto.  
 - Favicon: ícono personalizado en la pestaña del navegador.  
 
@@ -32,6 +32,24 @@ PÁGINA DE MILA:
 - Prompt: permite hacer pregunta a usuario antes de iniciar la página  
 
  
+PÁGINA DE LU:
+
+#TECNOLOGÍAS UTILIZADAS:
+- HTML5: estructura de la página.  
+- CSS3: estilos y diseño responsive con media queries.  
+- JavaScript: efectos dinámicos (cambio de imagen, menu de navegador desplegable en pantallas pequeñas).  
+- Google Fonts: tipografía Roboto.  
+- Favicon: ícono personalizado en la pestaña del navegador.  
+
+## Estructura de Archivos
+- `index.html`: página principal.  
+- `estilos/estilosLu.css`: hoja de estilos principal.  
+- `js/scriptLu.js`: archivo de JavaScript con funciones dinámicas.  
+- `img/`: carpeta de imágenes.  
+
+## Funcionalidades con JavaScript
+- Imagen central: en el archivo `scriptLu.js`, utilizado para intercambiar elementos dinámicos.  
+- Menu Hamburguesa: permite visualizar las opciones de un navegador de forma desplegable  
 
 
 
