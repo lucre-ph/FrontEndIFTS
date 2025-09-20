@@ -112,3 +112,19 @@ li {
 
 }
 
+
+#botonIndex {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#botonIndex:hover {
+  background-color: #2a9d8f;
+}
