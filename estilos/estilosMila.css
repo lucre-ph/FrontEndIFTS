@@ -46,7 +46,7 @@ li {
   height: 180px;
   margin: 0 10px;
   position: relative;
-  background-image: url("./img/touch1.png");
+  background-image: url("../img/touch1.png");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -189,6 +189,7 @@ footer {
     font-size: 20px;
   }
 }
+
 
 
 
