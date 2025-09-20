@@ -1,9 +1,6 @@
 //INTERACTIVIDAD: CREAR BOTON EN INDEX
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.createElement("botonIndex");
-  btn.textContent = "Cambiar fondo";
-  document.body.appendChild(btn);
-
+  const btn = document.getElementById("botonIndex");
   const colores = ["#f4a261", "#2a9d8f", "#e9c46a", "#264653", "#e76f51"];
 
   btn.addEventListener("click", () => {
@@ -58,5 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 600);
     });
 });
+
 
 
