@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(117, 243, 255), rgb(255, 104, 230));
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(49, 49, 49);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+#grupazo {
+  font-size: x-large;
+}
+
+summary {
+  cursor: pointer;
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 15px auto; /* centrado horizontal */
+  color: white;
+  width: 600px;
+  text-align: center; /* centra el texto dentro */
+}
+
+details[open] summary {
+  background-color: rgb(49, 49, 49);
+  width: 600px;
+}
+
+p {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Escritorio grande (>=1200px) */
+@media (min-width: 1200px) {
+  summary,
+  details[open] summary {
+    width: 800px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas medianas (>=900px y <1200px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  summary,
+  details[open] summary {
+    width: 700px;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+/* Tablet / Celular (>=400px y <900px) */
+@media (min-width: 400px) and (max-width: 899px) {
+  summary,
+  details[open] summary {
+    width: 90%; /* ocupa casi todo el ancho */
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Celular chico (<400px) */
+@media (max-width: 399px) {
+  summary,
+  details[open] summary {
+    width: 95%;
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
