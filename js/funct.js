@@ -1,3 +1,22 @@
+//INTERACTIVIDAD: CREAR BOTON EN INDEX
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.createElement("botonIndex");
+  btn.textContent = "Cambiar fondo";
+  document.body.appendChild(btn);
+
+  const colores = ["#f4a261", "#2a9d8f", "#e9c46a", "#264653", "#e76f51"];
+
+  btn.addEventListener("click", () => {
+    const randomColor = colores[Math.floor(Math.random() * colores.length)];
+    document.body.style.backgroundColor = randomColor;
+  });
+});
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("toggleInfo");
   const infoSection = document.getElementById("infoSection");
@@ -39,4 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 600);
     });
 });
+
 
