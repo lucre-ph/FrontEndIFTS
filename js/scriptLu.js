@@ -1,6 +1,6 @@
 // Declaracion de constantes
 const imagen = document.getElementById("pokedex");
-const imgOriginal = "../img/pokedex1.png";
+const imgOriginal = "./img/pokedex1.png";
 const imgNueva = "./img/pokedex2.png";
 const btnMenu = document.getElementById("menu");
 const nav = document.querySelector(".linksNavegacion");
@@ -16,3 +16,4 @@ btnMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
 
 });
+
