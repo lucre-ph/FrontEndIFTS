@@ -1,5 +1,6 @@
-## ***FrontEndIFTS, TPO1, Proyecto Web en Equipo***
-**Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro 
+## **_FrontEndIFTS, TPO1, Proyecto Web en Equipo_**
+
+**Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro
 
 #DESCRIPCIÓN DEL PROYECTO:
 
@@ -7,51 +8,112 @@ Este trabajo práctico consiste en el desarrollo de un sitio web grupal con una 
 El objetivo del proyecto es practicar el uso de HTML, CSS y JavaScript para construir un sitio web navegable, con diseño atractivo y adaptable a distintos dispositivos.  
 Cada integrante desarrolló su propia página personal, en la que explica información seleccionada y aplica funcionalidades básicas como estilos personalizados, uso de imágenes, efectos dinámicos y elementos responsive.
 
+## PÁGINA DE MILA:
 
+#### TECNOLOGÍAS UTILIZADAS:
 
-
-
-
-PÁGINA DE MILA:
-
-#TECNOLOGÍAS UTILIZADAS:
-- HTML5: estructura de la página.  
-- CSS3: estilos, diseño responsive con media queries y degradados de fondo.  
-- JavaScript: efectos dinámicos (parpadeo, PROMPT).  
-- Google Fonts: tipografía Roboto.  
-- Favicon: ícono personalizado en la pestaña del navegador.  
+- HTML5: estructura de la página.
+- CSS3: estilos, diseño responsive con media queries y degradados de fondo.
+- JavaScript: efectos dinámicos (parpadeo, PROMPT).
+- Google Fonts: tipografía Roboto.
+- Favicon: ícono personalizado en la pestaña del navegador.
 
 ## Estructura de Archivos
-- `index.html`: página principal.  
-- `estilos/estilosMila.css`: hoja de estilos principal.  
-- `js/parpadeo.js`: archivo de JavaScript con funciones dinámicas.  
-- `img/`: carpeta de imágenes (avatar, fondos).  
+
+- `index.html`: página principal.
+- `estilos/estilosMila.css`: hoja de estilos principal.
+- `js/parpadeo.js`: archivo de JavaScript con funciones dinámicas.
+- `img/`: carpeta de imágenes (avatar, fondos).
 
 ## Funcionalidades con JavaScript
-- Efecto de parpadeo: en el archivo `parpadeo.js`, utilizado para resaltar elementos dinámicos.  
-- Prompt: permite hacer pregunta a usuario antes de iniciar la página  
 
- 
-PÁGINA DE LU:
+- Efecto de parpadeo: en el archivo `parpadeo.js`, utilizado para resaltar elementos dinámicos.
+- Prompt: permite hacer pregunta a usuario antes de iniciar la página
 
-#TECNOLOGÍAS UTILIZADAS:
-- HTML5: estructura de la página.  
-- CSS3: estilos y diseño responsive con media queries.  
-- JavaScript: efectos dinámicos (cambio de imagen, menu de navegador desplegable en pantallas pequeñas).  
-- Google Fonts: tipografía Roboto.  
-- Favicon: ícono personalizado en la pestaña del navegador.  
+## PÁGINA DE LU:
+
+#### TECNOLOGÍAS UTILIZADAS:
+
+- HTML5: estructura de la página.
+- CSS3: estilos y diseño responsive con media queries.
+- JavaScript: efectos dinámicos (cambio de imagen, menu de navegador desplegable en pantallas pequeñas).
+- Google Fonts: tipografía Roboto.
+- Favicon: ícono personalizado en la pestaña del navegador.
 
 ## Estructura de Archivos
-- `index.html`: página principal.  
-- `estilos/estilosLu.css`: hoja de estilos principal.  
-- `js/scriptLu.js`: archivo de JavaScript con funciones dinámicas.  
-- `img/`: carpeta de imágenes.  
+
+- `index.html`: página principal.
+- `estilos/estilosLu.css`: hoja de estilos principal.
+- `js/scriptLu.js`: archivo de JavaScript con funciones dinámicas.
+- `img/`: carpeta de imágenes.
 
 ## Funcionalidades con JavaScript
-- Imagen central: en el archivo `scriptLu.js`, utilizado para intercambiar elementos dinámicos.  
-- Menu Hamburguesa: permite visualizar las opciones de un navegador de forma desplegable  
 
+- Imagen central: en el archivo `scriptLu.js`, utilizado para intercambiar elementos dinámicos.
+- Menu Hamburguesa: permite visualizar las opciones de un navegador de forma desplegable
 
+## PÁGINA DE PABLO:
 
+#### TECNOLOGÍAS UTILIZADAS:
 
+- HTML5: estructura de la página.
+- CSS3: estilos, diseño responsive con media queries, variables CSS para theming y efectos 3D.
+- JavaScript: funcionalidad de cambio de tema (modo claro/oscuro) con persistencia en localStorage.
+- Google Fonts: tipografía Pixelify Sans.
+- Favicon: ícono personalizado en la pestaña del navegador.
 
+## Estructura de Archivos
+
+- `pabloCombis.html`: página principal.
+- `estilos/estilosPablo.css`: hoja de estilos principal con sistema de theming.
+- `js/scriptPablo.js`: archivo de JavaScript con funcionalidad de cambio de tema.
+- `img/pablo/`: carpeta de imágenes específicas (avatar, GitHub, iconos de tema).
+
+## Funcionalidades con JavaScript
+
+- Cambio de tema: en el archivo `scriptPablo.js`, permite alternar entre modo claro y oscuro con persistencia en localStorage.
+- Interacción táctil: mejora la experiencia en dispositivos móviles para la tarjeta con efecto flip.
+
+## PÁGINA DE TINCHO:
+
+#### TECNOLOGÍAS UTILIZADAS:
+
+- HTML5: estructura de la página.
+- CSS3: estilos, diseño responsive con media queries y variables CSS personalizadas.
+- JavaScript: secciones colapsables estilo acordeón con animaciones.
+- Google Fonts: tipografía Google Sans Code.
+- Favicon: ícono personalizado en la pestaña del navegador.
+
+## Estructura de Archivos
+
+- `martinComito.html`: página principal.
+- `estilos/estilosTincho.css`: hoja de estilos principal con paleta de colores azules.
+- `js/martinScript.js`: archivo de JavaScript con funcionalidad de acordeón.
+- `img/`: carpeta de imágenes.
+
+## Funcionalidades con JavaScript
+
+- Secciones colapsables: en el archivo `martinScript.js`, implementa un sistema de acordeón donde solo una sección puede estar abierta a la vez.
+
+## PÁGINA DE LICHA:
+
+#### TECNOLOGÍAS UTILIZADAS:
+
+- HTML5: estructura de la página.
+- CSS3: estilos, diseño responsive con media queries y imagen de fondo fija.
+- JavaScript: cambio de avatar dinámico y botón de cambio de fondo.
+- Google Fonts: tipografía Roboto.
+- Favicon: ícono personalizado en la pestaña del navegador.
+
+## Estructura de Archivos
+
+- `leandroSeoane.html`: página principal.
+- `estilos/estilosLicha.css`: hoja de estilos principal con imagen de fondo.
+- `js/funct.js`: archivo de JavaScript con múltiples funcionalidades dinámicas.
+- `img/`: carpeta de imágenes (incluye gandalf1.png, gandalf2.png, lenguita.jfif).
+
+## Funcionalidades con JavaScript
+
+- Cambio de avatar: en el archivo `funct.js`, permite alternar entre dos versiones del avatar de Gandalf con efecto fade.
+- Cambio de fondo: botón que cambia aleatoriamente el color de fondo de la página.
+- Sección colapsable: botón para mostrar/ocultar información personal con animación.
