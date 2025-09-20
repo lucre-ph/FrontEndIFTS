@@ -2,7 +2,7 @@
 
 **Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro
 
-**Link a GitHub Pages:** <a href="https://lucre-ph.github.io/FrontEndIFTS/" target="_blank">https://lucre-ph.github.io/FrontEndIFTS/</a>
+**Link a GitHub Pages:** https://lucre-ph.github.io/FrontEndIFTS/
 
 ## DESCRIPCIÓN DEL PROYECTO:
 
