@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(white, grey);
+  background: linear-gradient(white, pink);
   padding: 0 ;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -36,8 +36,9 @@ summary {
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
-  margin: 15px;
+  margin-top: 50px;
   color: white;
+  width: 600px;
 }
 
 details[open] summary {
@@ -48,6 +49,7 @@ p{
 color: black;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 
 }
