@@ -8,6 +8,30 @@ Este trabajo práctico consiste en el desarrollo de un sitio web grupal con una 
 El objetivo del proyecto es practicar el uso de HTML, CSS y JavaScript para construir un sitio web navegable, con diseño atractivo y adaptable a distintos dispositivos.  
 Cada integrante desarrolló su propia página personal, en la que explica información seleccionada y aplica funcionalidades básicas como estilos personalizados, uso de imágenes, efectos dinámicos y elementos responsive.
 
+## PÁGINA PRINCIPAL:
+
+#### TECNOLOGÍAS UTILIZADAS:
+
+- HTML5: estructura de la página principal con navegación y contenido grupal.
+- CSS3: estilos, diseño responsive con media queries y degradado de fondo.
+- JavaScript: funcionalidad de cambio de color de fondo dinámico.
+- Google Fonts: tipografía Roboto.
+- Favicon: ícono personalizado en la pestaña del navegador.
+
+## Estructura de Archivos
+
+- `index.html`: página principal con navegación a páginas individuales.
+- `estilos/estilos.css`: hoja de estilos principal con diseño responsive.
+- `js/funct.js`: archivo de JavaScript con funcionalidad de cambio de fondo.
+- `img/`: carpeta de imágenes (favicon, avatar de Shrek).
+- `music/`: carpeta de archivos de audio.
+
+## Funcionalidades con JavaScript
+
+- Cambio de fondo: en el archivo `funct.js`, botón que cambia aleatoriamente el color de fondo de la página.
+- Navegación: enlaces a las páginas individuales de cada miembro del equipo.
+- Audio: reproductor de música.
+
 ## PÁGINA DE MILA:
 
 #### TECNOLOGÍAS UTILIZADAS:
@@ -115,5 +139,4 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 ## Funcionalidades con JavaScript
 
 - Cambio de avatar: en el archivo `funct.js`, permite alternar entre dos versiones del avatar de Gandalf con efecto fade.
-- Cambio de fondo: botón que cambia aleatoriamente el color de fondo de la página.
 - Sección colapsable: botón para mostrar/ocultar información personal con animación.
