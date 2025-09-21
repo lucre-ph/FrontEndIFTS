@@ -6,15 +6,14 @@
 
 body {
   min-height: 100vh;
-  height: auto;
   font-family: 'PokemonClassic', sans-serif;
   background: url('../img/pokemonLogo.png') no-repeat center center fixed;
   background-size: contain;
   text-align: center;
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; 
 }
 
 @font-face {
@@ -30,10 +29,57 @@ body {
   background-image: url('./img/squirtle.png');
 }
 
+h1 {
+  margin-bottom: 7rem; 
+  font-size: 2rem;
+  color: #000000; 
+  text-shadow: 2px 2px 0 #ffcb05, -2px -2px 0 #ffcb05; 
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #000000; 
+  text-shadow: 1px 1px 0 #ffcb05; 
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #000000; 
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #ffcb05; 
+
+}
+
+.bienvenida {
+  max-width: 300px;
+  background-color: rgb(255, 255, 255);
+  border: #000000 0.7rem double;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: left; 
+}
+
 #pokedex {
-  max-width: 50%;
+  max-width: 300px;
+  width: 80%;
   height: auto;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.divPokedex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;        
+  flex-wrap: wrap;      
 }
 
 nav {
@@ -47,6 +93,16 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+.contenedor {
+  margin-top: 1rem; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+  align-items: center;    
+  text-align: center;
+  padding: 1rem;
 }
 
 .menuHamburguesa {
@@ -100,10 +156,10 @@ ul {
 }
 
 audio {
-  margin-top: 2rem;
+  margin: 1rem 0;
   width: 90%;
   max-width: 400px;
-  border: 2rem solid #ff0000;
+  border: 0.5rem solid #ff0000;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 0 2rem rgba(0,0,0,0.5);
@@ -112,7 +168,43 @@ audio {
 
 
 /* ----- BREAKPOINTS Y RESPONSIVENESS ----- */
+@media (min-width: 800px) {
+  #pokedex.zoom:hover {
+    transform: scale(3);
+    transition: transform 0.3s ease;
+  }
+}
+
 @media (max-width: 400px) {
+  h1 {
+      font-size: 1.4rem;
+      margin-bottom: 4rem; 
+  }
+
+  h2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+  }
+
+  .bienvenida, audio {
+    display: none;
+  }
+
+  .pokedex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bienvenida {
+    order: -1; /*Visualizo primero la bienvenida en mobile y despues el pokedex*/
+    text-align: center;
+    margin-left: 0;
+  }
 
   .menuHamburguesa {
       display: block;
@@ -194,7 +286,7 @@ audio {
       gap: 1.5rem;
   }
 
-  .menuHamburguesa {
+  .menuHamburguesa, h1, .bienvenida {
       display: none;
   }
-}  
+}
