@@ -78,7 +78,7 @@ ul {
 }
 
 .linksNavegacion li a:hover {
-  color: #d03737; 
+  color: #2a75bb; 
   font-weight: bold;
 }
 
@@ -103,10 +103,10 @@ audio {
   margin-top: 2rem;
   width: 90%;
   max-width: 400px;
-  border: 3px solid #ff0000;
+  border: 2rem solid #ff0000;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 2rem rgba(0,0,0,0.5);
   padding: 0.3rem;
 }  
 
