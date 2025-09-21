@@ -135,7 +135,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 - `leandroSeoane.html`: página principal.
 - `estilos/estilosLicha.css`: hoja de estilos principal con imagen de fondo.
-- `js/funct.js`: archivo de JavaScript con múltiples funcionalidades dinámicas.
+- `js/lichaScript.js`: archivo de JavaScript con múltiples funcionalidades dinámicas.
 - `img/`: carpeta de imágenes (incluye gandalf1.png, gandalf2.png, lenguita.jfif).
 
 ## Funcionalidades con JavaScript
