@@ -46,7 +46,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `index.html`: página principal.
+- `camilaCuns.html`: página principal.
 - `estilos/estilosMila.css`: hoja de estilos principal.
 - `js/parpadeo.js`: archivo de JavaScript con funciones dinámicas.
 - `img/`: carpeta de imágenes (avatar, fondos).
@@ -68,7 +68,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `index.html`: página principal.
+- `lu.html`: página principal.
 - `estilos/estilosLu.css`: hoja de estilos principal.
 - `js/scriptLu.js`: archivo de JavaScript con funciones dinámicas.
 - `img/`: carpeta de imágenes.
