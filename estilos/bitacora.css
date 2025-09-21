@@ -4,7 +4,7 @@
 
 body {
   background: linear-gradient(rgb(117, 243, 255), rgb(255, 104, 230));
-  padding: 0;
+  padding: 0 0 120px 0; /* padding-bottom para el footer fijo */
   text-align: center;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
@@ -74,6 +74,14 @@ h1 {
 
 #grupazo {
   font-size: x-large;
+  margin-bottom: 20px;
+}
+
+/* Contenedor principal para el contenido */
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
 
 summary {
@@ -130,27 +138,47 @@ p {
 
 /* Tablet / Celular (>=400px y <900px) */
 @media (min-width: 400px) and (max-width: 899px) {
+  body {
+    padding-bottom: 140px;
+  }
+
+  main {
+    padding: 15px 5px;
+  }
+
   summary,
   details[open] summary {
     width: 90%; /* ocupa casi todo el ancho */
     font-size: 16px;
+    margin: 10px auto;
   }
 
   p {
     font-size: 16px;
+    margin: 10px 0;
   }
 }
 
 /* Celular chico (<400px) */
 @media (max-width: 399px) {
+  body {
+    padding-bottom: 150px; /* más espacio para el footer en pantallas pequeñas */
+  }
+
+  main {
+    padding: 10px 5px;
+  }
+
   summary,
   details[open] summary {
     width: 95%;
     font-size: 15px;
     padding: 8px;
+    margin: 8px auto;
   }
 
   p {
     font-size: 15px;
+    margin: 8px 0;
   }
 }
