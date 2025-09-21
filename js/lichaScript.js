@@ -1,44 +1,53 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const avatar = document.querySelector(".avatar");
-  const aliasParrafo = document.querySelector(".tarjeta p strong");
+    const avatar = document.querySelector(".avatar");
+    const aliasParrafo = document.querySelector(".tarjeta p:nth-of-type(1)");
+    let esGris = true;
+    if (!avatar || !aliasParrafo) return;
 
-  let esGris = true;
+    avatar.addEventListener("click", () => {
+        avatar.classList.add("fade");
+        aliasParrafo.classList.add("fade");
 
-  if (!avatar || !aliasParrafo) return;
+        setTimeout(() => {
+            if (esGris) {
+                avatar.src = "./img/gandalf2.png";
+                aliasParrafo.innerHTML = "<strong>Alias:</strong> Lichalf el Blanco";
+            } else {
+                avatar.src = "./img/gandalf1.png";
+                aliasParrafo.innerHTML = "<strong>Alias:</strong> Lichalf el Gris";
+            }
+            esGris = !esGris;
 
-  avatar.addEventListener("click", () => {
-    avatar.classList.add("fade");
-
-    setTimeout(() => {
-      if (esGris) {
-        avatar.src = "./img/gandalf2.png";
-        aliasParrafo.textContent = "Alias: Lichalf el Blanco";
-      } else {
-        avatar.src = "./img/gandalf1.png";
-        aliasParrafo.textContent = "Alias: Lichalf el Gris";
-      }
-      esGris = !esGris;
-
-      avatar.classList.remove("fade");
-    }, 600);
-  });
+            avatar.classList.remove("fade");
+            aliasParrafo.classList.remove("fade");
+        }, 600); 
+    });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   
-  const buttonEstadoParrafo = document.querySelector("aside .tarjeta button")
-  let estado = "Vivo"
+  const buttonEstadoParrafo = document.querySelector("aside .tarjeta button");
+  const estadoParrafo = document.querySelector(".tarjeta p:nth-of-type(2)");
 
   if (!buttonEstadoParrafo) return;
 
   buttonEstadoParrafo.addEventListener("click", () => {
-
-    const pEstado = document.createElement("p");
-    pEstado.innerHTML = `<strong>Estado:</strong> ${estado}`;
-
-    const padre = buttonEstadoParrafo.parentElement;
-    padre.replaceChild(pEstado, buttonEstadoParrafo)
     
+    buttonEstadoParrafo.classList.add("fade-out");
+
+    
+    setTimeout(() => {
+      
+      estadoParrafo.innerHTML = `<strong>Estado:</strong> <span class="fade-in">Vivo (o algo asi)</span>`;
+
+      
+      const nuevoTexto = estadoParrafo.querySelector("span.fade-in");
+
+      
+      setTimeout(() => {
+        nuevoTexto.classList.add("show");
+      }, 50);
+
+    }, 500); 
   });
 });
-
