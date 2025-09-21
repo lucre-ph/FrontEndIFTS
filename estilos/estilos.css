@@ -83,6 +83,7 @@ p {
   background-color: rgb(155, 0, 147);
   margin-top: 20px;
   color: white;
+  margin-bottom: 50px;
 }
 
 footer {
@@ -144,5 +145,8 @@ footer p {
     width: 90%;
     font-size: 15px;
     padding: 8px;
+  }
+  footer p {
+    padding: 0;
   }
 }
