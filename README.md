@@ -46,7 +46,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `camilaCuns.html`: página principal.
+- `camila.html`: página principal.
 - `estilos/estilosMila.css`: hoja de estilos principal.
 - `js/parpadeo.js`: archivo de JavaScript con funciones dinámicas.
 - `img/`: carpeta de imágenes (avatar, fondos).
@@ -90,7 +90,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `pabloCombis.html`: página principal.
+- `pablo.html`: página principal.
 - `estilos/estilosPablo.css`: hoja de estilos principal con sistema de theming.
 - `js/scriptPablo.js`: archivo de JavaScript con funcionalidad de cambio de tema.
 - `img/pablo/`: carpeta de imágenes específicas (avatar, GitHub, iconos de tema).
@@ -112,7 +112,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `martinComito.html`: página principal.
+- `martin.html`: página principal.
 - `estilos/estilosTincho.css`: hoja de estilos principal con paleta de colores azules.
 - `js/martinScript.js`: archivo de JavaScript con funcionalidad de acordeón.
 - `img/`: carpeta de imágenes.
@@ -133,7 +133,7 @@ Cada integrante desarrolló su propia página personal, en la que explica inform
 
 ## Estructura de Archivos
 
-- `leandroSeoane.html`: página principal.
+- `leandro.html`: página principal.
 - `estilos/estilosLicha.css`: hoja de estilos principal con imagen de fondo.
 - `js/lichaScript.js`: archivo de JavaScript con múltiples funcionalidades dinámicas.
 - `img/`: carpeta de imágenes (incluye gandalf1.png, gandalf2.png, lenguita.jfif).
