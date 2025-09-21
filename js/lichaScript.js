@@ -31,17 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!buttonEstadoParrafo) return;
 
-  buttonEstadoParrafo.addEventListener("click", (e) => {
+  buttonEstadoParrafo.addEventListener("click", () => {
 
-    e.preventDefault();
     const pEstado = document.createElement("p");
     pEstado.innerHTML = `<strong>Estado:</strong> ${estado}`;
-    buttonEstadoParrafo.classList.add("fade");
 
     const padre = buttonEstadoParrafo.parentElement;
     padre.replaceChild(pEstado, buttonEstadoParrafo)
-
-    setTimeout(() => {
+    
   });
 });
 
