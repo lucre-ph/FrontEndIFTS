@@ -23,3 +23,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 600);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  
+  const buttonEstadoParrafo = document.querySelector("aside .tarjeta button")
+  let estado = "Vivo"
+
+  if (!buttonEstadoParrafo) return;
+
+  buttonEstadoParrafo.addEventListener("click", (e) => {
+
+    e.preventDefault();
+    const pEstado = document.createElement("p");
+    pEstado.innerHTML = `<strong>Estado:</strong> ${estado}`;
+    buttonEstadoParrafo.classList.add("fade");
+
+    const padre = buttonEstadoParrafo.parentElement;
+    padre.replaceChild(pEstado, buttonEstadoParrafo)
+
+    setTimeout(() => {
+  });
+});
+
