@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   height: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'PokemonClassic', sans-serif;
   background: url('../img/pokemonLogo.png') no-repeat center center fixed;
   background-size: contain;
   text-align: center;
@@ -15,6 +15,13 @@ body {
   justify-content: center; 
   align-items: center;    
   overflow: hidden;
+}
+
+@font-face {
+  font-family: 'PokemonClassic';
+  src: url('./fonts/Pokemon\ Classic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .logo {
