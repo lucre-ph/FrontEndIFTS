@@ -2,7 +2,7 @@
 
 **Grupo 10** : Combis Pablo, Comito Martin, Cuns Camila, Pedraza Lucrecia, Seoane Leandro
 
-**Link a GitHub Pages:** https://lucre-ph.github.io/FrontEndIFTS/
+**Link a Vercel:** [front-end-ifts.vercel.app](https://front-end-ifts.vercel.app/)
 
 ## DESCRIPCIÓN DEL PROYECTO:
 
