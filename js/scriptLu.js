@@ -1,33 +1,46 @@
 // Declaracion de constantes
-const imagen = document.getElementById("pokedex");
-const imgOriginal = "./img/pokedex1.png";
-const imgNueva = "./img/pokedex2.png";
+const pokeCerrado = document.getElementById("pokedex1");
+const pokeAbierto = document.getElementById("pokedex2");
 const btnMenu = document.getElementById("menu");
+const botonBienvenida = document.querySelector(".botonBienvenida");
 const nav = document.querySelector(".linksNavegacion");
 const saludo = document.querySelector(".bienvenida");
 const playlist = [
-  "../music/Pewter City.mp3", 
-  "../music/Cerulean City.mp3", 
-  "../music/Celadon City.mp3", 
-  "../music/Cinnabar Island.mp3", 
-  "../music/Pallet Town.mp3", 
-  "../music/Vermillion City.mp3", 
-  "../music/Pewter City.mp3", 
-  "../music/Surfing.mp3"
+  "./music/Pewter City.mp3", 
+  "./music/Cerulean City.mp3", 
+  "./music/Celadon City.mp3", 
+  "./music/Cinnabar Island.mp3", 
+  "./music/Pallet Town.mp3", 
+  "./music/Vermillion City.mp3", 
+  "./music/Pewter City.mp3", 
+  "./music/Surfing.mp3"
 ];
 
 // Funciones y eventos
-// Cambiar imagen al hacer click en pokedex y ocultar saludo
-imagen.addEventListener("click", () => {
-  imagen.src = imagen.src.includes("pokedex1") ? imgNueva : imgOriginal;
-  
-  //No incluye zoom en pantallas chicas
-  if (window.innerWidth >= 800) {
-    imagen.src.includes("pokedex2") ? imagen.classList.add("zoom") : imagen.classList.remove("zoom");
-  }
+//Desplegar bienvenida al hacer click en boton ver mas
+botonBienvenida.addEventListener("click", () => {
+  botonBienvenida.style.display = "none";
+  saludo.style.display = "block";
+});
 
-  saludo.style.display = saludo.style.display === "none" ? "block" : "none";
-  
+//--------Abrir y cerrar pokedex--------
+pokeCerrado.addEventListener("click", () => {
+  pokeCerrado.style.display = "none";
+  pokeAbierto.style.display = "block";
+  saludo.style.display = "none";
+
+//Zoom pokedex2 en pantallas medianas y grandes
+  if (window.innerWidth >= 800) {
+      pokeAbierto.classList.add("zoom");
+      saludo.style.display = "none";
+    }
+});
+pokeAbierto.addEventListener("click", () => {
+  pokeAbierto.style.display = "none";
+  pokeCerrado.style.display = "block";
+  saludo.style.display = "none";
+
+  pokeAbierto.classList.remove("zoom");
 });
 
 // Mostrar y ocultar menu desplegable del navegador
@@ -45,4 +58,3 @@ player.addEventListener("ended", () => {
   player.src = playlist[index];
   player.play();
 });
-
