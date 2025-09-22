@@ -249,8 +249,8 @@ audio {
 
 /* ----- BREAKPOINTS Y RESPONSIVENESS ----- */
 @media (min-width: 800px) {
-  #pokedex2.zoom img:hover {
-    transform: scale(3);
+  #pokedex2.zoom:hover {
+    transform: scale(1.5);
     transition: transform 0.3s ease;
   }
 }
