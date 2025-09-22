@@ -13,7 +13,8 @@ const playlist = [
   "../music/Pallet Town.mp3", 
   "../music/Vermillion City.mp3", 
   "../music/Pewter City.mp3", 
-  "../music/Surfing.mp3"];
+  "../music/Surfing.mp3"
+];
 
 // Funciones y eventos
 // Cambiar imagen al hacer click en pokedex y ocultar saludo
@@ -44,3 +45,4 @@ player.addEventListener("ended", () => {
   player.src = playlist[index];
   player.play();
 });
+
